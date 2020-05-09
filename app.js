@@ -10,10 +10,12 @@ function dott(){
 }
 
 function deleete(){
-    if(document.forms[0].elements[0].value){
-        document.forms[0].elements[0].value = document.forms[0].elements[0].value.slice(0,document.forms[0].elements[0].value.length-1)
+    if(!isEqual) {
+        if (document.forms[0].elements[0].value) {
+            document.forms[0].elements[0].value = document.forms[0].elements[0].value.slice(0, document.forms[0].elements[0].value.length - 1)
+        }
     }
-
+    else { document.forms[0].elements[0].value  = ""; isEqual =0; }
 }
 
 function operator(i){
