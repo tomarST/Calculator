@@ -1,7 +1,19 @@
 body {
-    background: linear-gradient(to right, red, blue);
+    background: linear-gradient(-45deg, #e2c48b, 	#f6ecc8, #e7cac9, #f3bfb2);
+    background-size: 400% 400%;
+    animation: Gradient 15s ease infinite;
 }
-
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
 .textview {
     width: 208px;
     height: 25px;
